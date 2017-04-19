@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import Home from './components/home';
 import About from './components/about';
@@ -19,12 +19,12 @@ const Routes = () => (
         <li><Link to="/topics">Topics</Link></li>
       </ul>
 
-      <hr/>
+      <hr />
 
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
     </div>
   </Router>
-)
+);
 export default Routes;
